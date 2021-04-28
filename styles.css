@@ -9,6 +9,8 @@
 
   /* typo */
   --basic:16px;
+  --first-heading:1.5em; 
+  --second-heading:1.2em; 
   --bold: 400;
   --very-bold:700;
 }
@@ -22,10 +24,20 @@
 /* Overall style */
 
 * {
-  font-family: 'inter', regular;
+  font-family: 'inter';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Titles */
+h1 {
+  font-size:var(--first-heading);
+  font-variation-settings: "wght" 600;
+}
+h2 {
+  font-size:var(--second-heading);
+  font-variation-settings: "wght" 400;
 }
 
 /* Toggle */
@@ -35,9 +47,58 @@
 
 /* Main */
 body {
- font-size: var(--basic);
+  font-size: var(--basic);
+  background-color:var(--primary-bg);
+  color: var(--secondary-txt);
+} 
+
+header, main {
+  display:flex;
+  flex-direction: column;
+  padding: 0 1.5em;
 }
 
+header {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+header p {
+  color: var(--primary-txt);
+  font-variation-settings: "wght" 700;
+  font-size:0.9em;
+}
+
+header .break-line {
+  height:1px;
+  width:100%;
+  background-color:var(--primary-txt);
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+.user-section {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-section__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  padding: 1em 0;
+  background-color: var(--card-bg);
+}
+.user-section__card__numbers {
+  padding: 0.5em 0;
+  font-size: 2.5em;
+  font-weight: var(--very-bold);
+}
+
+.overview h2 {
+  padding: 1em 0;
+}
 /* Accessibility */
 
 /* Responsive */

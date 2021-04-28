@@ -9,27 +9,59 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="theme.css" />
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Social Media dashboard</title>
   </head>
-  <body>
-    <header>Social Media Dashboard Total Followers: 23,004 Dark Mode</header>
+  <body class="light-theme">
+    <header>
+      <div>
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers:23,004</p>
+      </div>
+      <div class="break-line"></div>
+      <p>Dark Mode</p>
+    </header>
     <main>
-      <section>
-        <section>
-          @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
-          @realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144
-          Today
-        </section>
-        <section>
-          Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile
-          Views 52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total
-          Views 1407 12%
-        </section>
+      <section class="user-section">
+        <div class="user-section__card">
+          <p>@nathanf</p>
+          <p class="user-section__card__numbers">1987</p>
+          <p>Followers</p>
+          <p>12 Today</p>
+        </div>
+        <div class="user-section__card">
+          <p>@nathanf</p>
+          <span class="user-section__card__numbers">1024</span>
+          <p>Followers</p>
+          <p>99 Today</p>
+        </div>
+        <div class="user-section__card">
+          <p>@realnathanf</p>
+          <span class="user-section__card__numbers">11k</span>
+          <p>Followers</p>
+          <p>1099 Today</p>
+        </div>
+        <div class="user-section__card">
+          <p>Nathan F.</p>
+          <span class="user-section__card__numbers">8239 </span>
+          <p>Subscribers</p>
+          <p>144 Today</p>
+        </div>
+      </section>
+      <section class="overview">
+        <h2>Overview - Today</h2>
+        <div class="overview__card">Page Views 87 3% %</div>
+        <div class="overview__card">Likes 52 2</div>
+        <div class="overview__card">Likes 5462 2257%</div>
+        <div class="overview__card">Views 52k 1375%</div>
+        <div class="overview__card">Retweets 117 303%</div>
+        <div class="overview__card">Likes 507 553%</div>
+        <div class="overview__card">Likes 107 19%</div>
+        <div class="overview__card">Total Views 1407 12%</div>
       </section>
     </main>
     <footer class="attribution">
