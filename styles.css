@@ -33,6 +33,11 @@
   background-color:var(--toggle-color);
 }
 
+/* Main */
 body {
  font-size: var(--basic);
 }
+
+/* Accessibility */
+
+/* Responsive */
