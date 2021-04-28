@@ -4,7 +4,7 @@
   --bright-red: hsl(356, 69%, 56%);
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
-  --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --youTube: hsl(348, 97%, 39%);
 
   /* typo */
@@ -84,18 +84,95 @@ header .break-line {
 .user-section__card {
   display: flex;
   flex-direction: column;
+  border-style: solid;
+  border-width: .25em 0px 0px 0px;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   margin: 1em 0;
   padding: 1em 0;
   background-color: var(--card-bg);
 }
-.user-section__card__numbers {
-  padding: 0.5em 0;
-  font-size: 2.5em;
-  font-weight: var(--very-bold);
+.user-section__card--fb {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: .25em 0px 0px 0px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  padding: 1em 0;
+  background-color: var(--card-bg);
+  border-color: var(--facebook);
+}
+.user-section__card--twitter {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: .25em 0px 0px 0px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  padding: 1em 0;
+  background-color: var(--card-bg);
+  border-color: var(--twitter);
+}
+.user-section__card--youtube {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: .25em 0px 0px 0px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  padding: 1em 0;
+  background-color: var(--card-bg);
+  border-color: var(--youTube);
+}
+.user-section__card--insta:before {
+  content: '';
+  height:.25em;
+  width:100%;
+  background: var(--instagram);
+  position: absolute;
+  top:-.25em;
+  left:0;
+}
+.user-section_name {
+  display: flex;
+  color: var(--primary-txt);
+  font-variation-settings: "wght" 700;
+}
+.user-section_icon {
+  margin-right:.5em;
+}
+.user-section__subs {
+  text-transform: uppercase;
+  letter-spacing:.25em;
+  text-align: center;
+  padding: 1em 0;
+}
+.user-section__numbers {
+  font-size: 3em;
+  font-variation-settings: "wght" 700;
+}
+.user-section__followers {
+  color: var(--primary-txt);
+  font-variation-settings: "wght" 400;
+}
+.user-section__gap {
+  font-variation-settings: "wght" 700;
 }
 
+.user-section__gap--positive {
+  color: var(--lime-green);
+}
+.user-section__gap--negative {
+  color: var(--bright-red);
+}
 .overview h2 {
   padding: 1em 0;
 }
