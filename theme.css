@@ -5,7 +5,7 @@
   --card-bg: hsl(228, 28%, 20%);
   --primary-txt: hsl(228, 34%, 66%);
   --secondary-txt: hsl(0, 0%, 100%);
-  --toggle-color:linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --toggle-color:linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
 }
 
 .light-theme {
