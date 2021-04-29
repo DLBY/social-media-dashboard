@@ -109,8 +109,10 @@ body {
   background-color:var(--primary-bg);
   z-index:1;
   color: var(--secondary-txt);
+  transition: 0.4s;
 } 
 .bg {
+  transition: 0.4s;
   position: absolute;
   top: 0;
   left:0;
@@ -177,10 +179,6 @@ header .break-line {
   padding: 1em 0;
   background-color: var(--card-bg);
   border-color: var(--facebook);
-}
-.user-section__card:hover {
-  cursor: pointer;
-  filter: brightness(85%);
 }
 .user-section__card--twitter:hover {
   cursor: pointer;

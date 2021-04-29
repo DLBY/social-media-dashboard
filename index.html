@@ -19,10 +19,11 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <script src="script.js"></script>
 
     <title>Frontend Mentor | Social Media dashboard</title>
   </head>
-  <body class="dark-theme">
+  <body>
     <div class="bg"></div>
     <header>
       <div>
@@ -33,7 +34,7 @@
       <div class="toggle-container">
         <p>Dark Mode</p>
         <label id="switch" class="switch">
-          <input type="checkbox" id="switch__slider" />
+          <input type="checkbox" id="switch__slider" onchange="toggleTheme()" />
           <span class="slider__round"></span>
         </label>
       </div>
@@ -41,7 +42,7 @@
     <main>
       <!--Top cards-->
       <section class="user-section">
-        <div class="user-section__card--fb">
+        <div class="user-section__card--fb" id="card-top">
           <p class="user-section_name">
             <img
               src="./assets//images/icon-facebook.svg"
