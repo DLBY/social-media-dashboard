@@ -50,9 +50,20 @@ h2 {
 body {
   font-size: var(--basic);
   background-color:var(--primary-bg);
+  z-index:1;
   color: var(--secondary-txt);
 } 
-
+.bg {
+  position: absolute;
+  top: 0;
+  left:0;
+  height:25%;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
+  width:100%;
+  background-color:var(--secondary-bg);
+  z-index:-10;
+}
 header, main {
   display:flex;
   flex-direction: column;
@@ -193,7 +204,8 @@ header .break-line {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 0;
+  border-radius: 2.5%;
+  margin: 0.5em 0;
   padding: 1em 0;
   background-color: var(--card-bg);
 }
