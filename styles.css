@@ -122,6 +122,22 @@ header .break-line {
   background-color: var(--card-bg);
   border-color: var(--facebook);
 }
+.user-section__card:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+.user-section__card--twitter:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+.user-section__card--youtube:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+.user-section__card--fb:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
 .user-section__card--twitter {
   display: flex;
   flex-direction: column;
@@ -209,6 +225,10 @@ header .break-line {
   margin: 0.5em 0;
   padding: 1em 0;
   background-color: var(--card-bg);
+}
+.overview__card:hover {
+  cursor: pointer;
+  filter: brightness(85%);
 }
 .overview__top {
   display:flex;
