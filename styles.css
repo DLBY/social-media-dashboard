@@ -264,6 +264,15 @@ footer {
   color:var(--primary-txt);
   font-variation-settings: "wght" 700;
 }
-/* Accessibility */
 
 /* Responsive */
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1440) {
+
+}
+/* Accessibility */
