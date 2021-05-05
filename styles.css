@@ -407,3 +407,6 @@ footer {
   }
 }
 /* Accessibility */
+.accessibility {
+  display: none;
+}
