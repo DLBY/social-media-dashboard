@@ -180,15 +180,11 @@ header .break-line {
   background-color: var(--card-bg);
   border-color: var(--facebook);
 }
-.user-section__card--twitter:hover {
+.dark-theme .card:hover {
   cursor: pointer;
-  filter: brightness(85%);
+  filter: brightness(1.2);
 }
-.user-section__card--youtube:hover {
-  cursor: pointer;
-  filter: brightness(85%);
-}
-.user-section__card--fb:hover {
+.light-theme .card:hover {
   cursor: pointer;
   filter: brightness(85%);
 }
